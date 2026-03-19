@@ -138,7 +138,7 @@ html {
     background-color: #fffaeb;
     z-index: 1;
     width: 80%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     padding: 0;
     border: 4px solid #141414;
     border-radius: 10px;
@@ -507,7 +507,11 @@ html {
     /* border-radius: 10px; */
 }
 
-#academic__container img {
+.services__container a{
+    text-decoration: none;
+}
+
+/* #academic__container img {
     height: 550px;
     width: auto;
     margin: auto;
@@ -515,7 +519,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-}
+} */
 
 .services__card {
     margin: 1rem;
@@ -631,6 +635,8 @@ html {
     top: 400px;
     left: 30px;
 }
+
+
 
 .services__card p{
     position: absolute;
@@ -908,29 +914,11 @@ html {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 960px) {
-    .main__content h1 {
-        font-size: 3.2rem;
-    }
-    
-    .main__content h2 {
-        font-size: 3.2rem;
-    }
 
-    .main__content h3 {
-        font-size: 2.5rem;
-    }
+/* Navbar */
+/* @media screen and (max-width: 960px) {
 
-    .services {
-        height: 720px;
-    }
-
-    .services h1{
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    /* .navbar {
+    .navbar {
         border: none;
         height: 90px;
         width: 100%;
@@ -1031,19 +1019,25 @@ html {
 
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    } */
-}
+    }
+} */
+
+
 @media screen and (max-width: 1750px) {
+    .main__content {
+    padding: 6vw;
+    }
+    
     .main__content h1{
-        font-size: 5rem;
+        font-size: 6.2vw;
     }
     
     .main__content h2 {
-        font-size: 3.2rem;
+        font-size: 1vw;
     }
 
     .main__content h3 {
-        font-size: 2.5rem;
+        font-size: 2.5vw;
     }
 
     .image--container {
@@ -1087,6 +1081,7 @@ html {
         height: calc(20vw * 1.312);
     }
 
+
     .achievement__card p {
         position: relative;
         top: 80%;
@@ -1105,6 +1100,7 @@ html {
     .services__card {
         width: 24vw;
         height: calc(24vw * 1.312);
+        
     }
 
     .services__card h2 {
@@ -1124,6 +1120,126 @@ html {
 
     #achievements {
         height: calc(20vw * 1.312 + 35vh)
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .about {
+        grid-template-columns: none;
+        height: calc(85vw + 450px);
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .about__left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .about__left h1 {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .about__text {
+        margin: 2.5vw 0px ;
+        width: 70vw; 
+    }
+
+    .about__text p {
+        font-size: 2vw;
+    }
+
+    .abtr {
+        justify-self: center;
+    }
+
+    .about__right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #memories {
+        position: static;
+        align-self: center;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .image--container {
+        height: calc(22vw);
+    }
+
+    .image--container img {
+    height: calc(22vw);
+    }
+
+    .image--caption {
+        font-size: calc(1.76vw);
+    }
+
+    #achievements {
+        height: calc(55vw + 150px);
+    }
+
+    .achievement__card h2{
+        font-size: 2.2vw;
+        top: 108%;
+        left: 0%;
+        margin: 0px;
+    }
+    
+    .achievement__card p{
+        font-size: 1.9vw;
+        top: 110%;
+        left: 2%
+    }
+
+     #services {
+        height: calc(55vw + 150px);
+    }
+
+    .services__card h2{
+        font-size: 2.2vw;
+        top: 108%;
+        left: 0%;
+        margin: 0px;
+    }
+    
+    .services__card p{
+        font-size: 1.9vw;
+        top: 110%;
+        left: 2%
+    }
+
+
+}
+
+
+@media screen and (max-width: 960px) {
+    .main__content h1 {
+        font-size: 3.2rem;
+    }
+    
+    .main__content h2 {
+        font-size: 3.2rem;
+    }
+
+    .main__content h3 {
+        font-size: 2.5rem;
+    }
+
+    .services {
+        height: 720px;
+    }
+
+    .services h1{
+        font-size: 2rem;
+        margin-top: 3rem;
     }
 }
 
